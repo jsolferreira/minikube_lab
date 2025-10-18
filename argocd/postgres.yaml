@@ -8,10 +8,13 @@ spec:
   source:
     repoURL: https://charts.bitnami.com/bitnami
     chart: postgresql
-    targetRevision: 15.5.12
+    targetRevision: 18.0.16
     helm:
-      valueFiles:
-        - charts/postgres/values.yaml
+      values: |
+        auth:
+          username: devuser
+          password: devpass
+          database: devdb
   destination:
     server: https://kubernetes.default.svc
     namespace: default
