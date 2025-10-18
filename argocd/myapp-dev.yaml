@@ -7,14 +7,14 @@ spec:
   project: default
   source:
     repoURL: https://github.com/jsolferreira/minikube_lab.git
-    targetRevision: main
+    targetRevision: master
     path: charts/mtapp
     #helm:
     #  valueFiles:
     #    - envs/dev/myapp-values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: myapp-dev
+    namespace: default
   syncPolicy:
     automated:
       prune: true
