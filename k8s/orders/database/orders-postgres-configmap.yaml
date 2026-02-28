@@ -5,6 +5,6 @@ metadata:
   labels:
     app: orders-postgres
 data:
-  POSTGRES_DB: ps_db
-  POSTGRES_USER: ps_user
-  POSTGRES_PASSWORD: SecurePassword
+  POSTGRES_DB: "orders"
+  POSTGRES_USER: "postgres"
+  POSTGRES_PASSWORD: "postgres"
